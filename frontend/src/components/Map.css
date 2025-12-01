@@ -1,0 +1,9 @@
+.map-wrapper {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.leaflet-container {
+  font-family: inherit;
+}
