@@ -6,8 +6,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-p6065abpan9kaiy0l6qdna^_!&8@ck3ya13(2&btm+1*c7nsj&'
 
-# Set DEBUG to False in production 
-# can use an environment variable to toggle this
+# Set DEBUG to False in production and use environment variable to control it
 DEBUG = True 
 
 # CHANGED: Allow all hosts so Render URL works

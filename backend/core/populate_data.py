@@ -5,7 +5,7 @@ from datetime import timedelta
 from django.utils import timezone
 
 # 1. Setup Django Environment
-# This allows us to access your database models from this script
+# This allows to access your database models from this script
 import sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'backend.settings')
