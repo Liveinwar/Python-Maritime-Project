@@ -1,6 +1,8 @@
 # 🚢 Marine Analytics
 
-> **Real-Time Maritime Intelligence Platform** - Track global vessel movements, analyze port congestion, and monitor maritime risks with live satellite data.
+> **Team Project | Real-Time Maritime Intelligence Platform**  
+> Built collaboratively to track global vessel movements, analyze port congestion,
+> and monitor maritime risks using live AIS satellite data.
 
 [![Django](https://img.shields.io/badge/Django-5.0-092E20?style=for-the-badge&logo=django&logoColor=white)](https://www.djangoproject.com/)
 [![React](https://img.shields.io/badge/React-18.x-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
@@ -9,6 +11,22 @@
 [![Live Demo](https://img.shields.io/badge/Status-Live-success?style=for-the-badge)](https://github.com/josna-14/Maritime_Vessel_Tracking)
 
 ---
+## 👨‍💻 My Role & Contributions (Trinjan Dutta)
+
+In this team project, I was primarily responsible for backend development,
+real-time data handling, and repository management.
+
+### Key Contributions
+- Designed and implemented Django REST APIs for vessel, port, and risk data
+- Integrated live AIS data using persistent WebSocket connections
+- Built real-time data pipelines for vessel position updates
+- Implemented JWT-based authentication and role-based access control
+- Assisted frontend integration by aligning API contracts
+- Managed Git workflows: branching strategy, pull requests, merges, and cleanup
+- Refactored and documented the codebase to make it production-ready
+
+> This repository is a mirrored version of the original team repository,
+> preserved to showcase my individual contributions and Git collaboration skills.
 
 ## 📋 Table of Contents
 
@@ -170,6 +188,13 @@ Marine Analytics addresses these challenges by providing:
 ![Analytics Dashboard](https://github.com/josna-14/Maritime_Vessel_Tracking/blob/main/PICS/Analytics.png)
 *Dashboard for the analyst to study the data*
 ---
+## ⚡ Quick Start (TL;DR)
+
+```bash
+git clone https://github.com/Liveinwar/Python-Maritime-Project.git
+cd Python-Maritime-Project/backend
+pip install -r requirements.txt
+python manage.py runserver
 
 ## 💻 Installation
 
@@ -183,8 +208,8 @@ Marine Analytics addresses these challenges by providing:
 
 ```bash
 # Clone the repository
-git clone https://github.com/josna-14/Maritime_Vessel_Tracking.git
-cd Maritime_Vessel_Tracking
+git clone + https://github.com/Liveinwar/Python-Maritime-Project
+cd Python-Maritime-Project
 
 # Navigate to backend directory
 cd backend
@@ -514,7 +539,7 @@ Real-time vessel position updates pushed every 5 seconds.
 ## 📁 Project Structure
 
 ```
-Maritime_Vessel_Tracking/
+Python-Maritime-Project/
 │
 ├── backend/
 │   ├── core/
@@ -684,6 +709,8 @@ For issues and questions:
 
 ---
 
+📌 This project demonstrates real-world experience with
+distributed systems, real-time data pipelines, and collaborative Git workflows.
 
 **Made with ❤️ for the Maritime Industry**
 
