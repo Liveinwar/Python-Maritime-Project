@@ -116,8 +116,6 @@ class VoyageTrackView(APIView):
 
 # backend/core/views.py
 
-# backend/core/views.py
-
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from .models import Vessel, RiskZone, Port, Voyage 
@@ -138,8 +136,8 @@ class DashboardStatsView(APIView):
         background_processing = int(total_vessels / 5) if total_vessels > 0 else 0
         total_throughput = real_http_requests + background_processing
 
-        # 3. NEW: Get Recent Voyages List for the Table
-        # We grab the last 5 'In Transit' voyages
+        # 3. Get Recent Voyages List for the Table
+        # the last 5 'In Transit' voyages
         recent_qs = Voyage.objects.filter(status='In Transit').select_related('vessel', 'port_from', 'port_to').order_by('-departure_time')[:5]
         
         recent_data = []
@@ -158,7 +156,7 @@ class DashboardStatsView(APIView):
             "active_risks": active_risks,
             "high_congestion_ports": high_congestion,
             "throughput": total_throughput,
-            "recent_voyages": recent_data, # 👈 Sending the list to frontend!
+            "recent_voyages": recent_data, #Sending the list to frontend
             "system_status": "Operational"
         })
 # -------------------------
@@ -315,7 +313,7 @@ def get_alerts(request):
     # 1. Base Query
     query = request.GET.get('search', '')
     severity_filter = request.GET.get('severity', 'all')
-    page_size = int(request.GET.get('page_size', 10)) # ✅ Support dynamic size
+    page_size = int(request.GET.get('page_size', 10)) #Support dynamic size
     
     notifications = Notification.objects.all().order_by('-timestamp')
 
@@ -409,8 +407,8 @@ def create_alert(request):
 
 @api_view(['POST'])
 def update_alert_status(request, alert_id):
-    # Since we are using read-only Notifications, we return success 
-    # so the frontend doesn't break.
+    # using read-only Notifications => return success 
+    # the frontend doesn't break.
     return Response({"message": "Status update simulated"})
 
 @api_view(['POST'])

@@ -21,22 +21,22 @@ class Command(BaseCommand):
         for v in vessels:
             changed = False
             
-            # Fix "Unknown" or missing Type
+            # "Unknown" or missing Type
             if not v.type or "Unknown" in v.type:
                 v.type = random.choice(types)
                 changed = True
                 
-            # Fix "Unknown" or missing Flag
+            # "Unknown" or missing Flag
             if not v.flag or "Unknown" in v.flag:
                 v.flag = random.choice(flags)
                 changed = True
                 
-            # Fix "Unknown" Operator
+            # "Unknown" Operator
             if not v.operator or "Unknown" in v.operator:
                 v.operator = random.choice(operators)
                 changed = True
                 
-            # Fix IMO Number (Generate random 7-digit if missing/invalid)
+            # IMO Number (Generate random 7-digit if missing/invalid)
             if not v.imo_number or "None" in str(v.imo_number):
                 v.imo_number = f"IMO-{random.randint(9000000, 9999999)}"
                 changed = True
