@@ -166,7 +166,7 @@ Marine Analytics addresses these challenges by providing:
 ![Admin Panel](https://github.com/josna-14/Maritime_Vessel_Tracking/blob/main/PICS/Admin_control.png)
 *Role-based admin panel for system configuration and user management*
 
-###Analytics Dashboard
+### Analytics Dashboard
 ![Analytics Dashboard](https://github.com/josna-14/Maritime_Vessel_Tracking/blob/main/PICS/Analytics.png)
 *Dashboard for the analyst to study the data*
 ---
